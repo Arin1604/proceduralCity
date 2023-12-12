@@ -34,7 +34,7 @@ void MainWindow::initialize() {
     filters_label->setText("Filters");
     filters_label->setFont(font);
     QLabel *ec_label = new QLabel(); // Extra Credit label
-    ec_label->setText("Feature to be added");
+    ec_label->setText("Extra Credit");
     ec_label->setFont(font);
     QLabel *param1_label = new QLabel(); // Parameter 1 label
     param1_label->setText("Parameter 1:");
@@ -49,12 +49,12 @@ void MainWindow::initialize() {
 
     // Create checkbox for per-pixel filter
     filter1 = new QCheckBox();
-    filter1->setText(QStringLiteral("Filter1"));
+    filter1->setText(QStringLiteral("Per-Pixel Filter"));
     filter1->setChecked(false);
 
     // Create checkbox for kernel-based filter
     filter2 = new QCheckBox();
-    filter2->setText(QStringLiteral("Filter2"));
+    filter2->setText(QStringLiteral("Kernel-Based Filter"));
     filter2->setChecked(false);
 
     // Create file uploader for scene file

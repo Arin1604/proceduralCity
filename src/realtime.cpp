@@ -172,10 +172,6 @@ void Realtime::initializeGL() {
             overlapCounter = 0; // Reset overlap counter after successful addition
         }
     }
-//    glm::mat4 random_transform_matrix = glm::mat4(1.0f);
-//    glm::mat4 scaleM = glm::scale(random_transform_matrix, glm::vec3(2.0f,1.0f,1.0f));
-//    glm::mat4 translateM = glm::translate(random_transform_matrix, glm::vec3(0.0f, 0.0, 0.0));
-//    m_CTM_collection.push_back(translateM*scaleM);
 }
 
 void Realtime::paintGL() {
@@ -350,8 +346,7 @@ void Realtime::paintTexture(GLuint texture){
     GLint locationKer = glGetUniformLocation(m_texture_shader,"kernel");
     glUniform1i(locationKer,settings.kernelBasedFilter);
 
-    glBindVertexArray(m_fullscreen_vao);
-    // Task 10: Bind "texture" to slot 0
+    glBindVertexArray(m_fullscreen_vao);    
     glActiveTexture(0);
     glBindTexture(GL_TEXTURE_2D,texture);
 

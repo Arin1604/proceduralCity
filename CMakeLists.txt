@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 # Sets project name
-project(Procedural_City LANGUAGES CXX C)
+project(projects_realtime LANGUAGES CXX C)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -88,6 +88,9 @@ qt6_add_resources(${PROJECT_NAME} "Resources"
 
 )
 
+target_sources(projects_realtime_other_files
+  PRIVATE  
+)
 
 # GLEW: this provides support for Windows (including 64-bit)
 if (WIN32)

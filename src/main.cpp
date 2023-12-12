@@ -8,7 +8,7 @@
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
 
-    QCoreApplication::setApplicationName("Procedural City");
+    QCoreApplication::setApplicationName("Projects 5 & 6: Lights, Camera & Action!");
     QCoreApplication::setOrganizationName("CS 1230");
     QCoreApplication::setApplicationVersion(QT_VERSION_STR);
 
